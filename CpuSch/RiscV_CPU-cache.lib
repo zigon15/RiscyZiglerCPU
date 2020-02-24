@@ -1,0 +1,137 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Symbols_ALU
+#
+DEF Symbols_ALU U 0 16 Y Y 1 F N
+F0 "U" 0 750 39 H V C CNN
+F1 "Symbols_ALU" 0 700 39 H V C CNN
+F2 "" -50 250 50 H I C CNN
+F3 "" -50 250 50 H I C CNN
+DRAW
+T 0 -175 325 39 0 0 0 SrcA Normal 0 C C
+T 0 -175 -250 39 0 0 0 SrcB Normal 0 C C
+S -250 650 250 -450 0 0 0 f
+P 7 0 0 0 -250 -250 -300 -250 -300 -100 -400 0 -400 -500 -300 -400 -300 -250 f
+P 2 0 1 0 -250 325 -300 325 N
+P 6 0 1 0 -300 325 -300 400 -400 450 -400 200 -300 250 -300 325 f
+X 0 ~ -450 -100 49 R 39 39 1 1 I
+X 0 ~ -450 400 49 R 39 39 1 1 I
+X 1 ~ -450 -200 49 R 39 39 1 1 I
+X 1 ~ -450 325 49 R 39 39 1 1 I
+X 2 ~ -450 -300 49 R 39 39 1 1 I
+X 2 ~ -450 250 47 R 39 39 1 1 I
+X 3 ~ -450 -400 49 R 39 39 1 1 I
+X OpCode ~ -300 600 49 R 39 39 1 1 I
+X Result ~ 300 600 49 L 39 39 1 1 O
+X Zero ~ 300 500 49 L 39 39 1 1 O
+X ~ ~ -350 50 98 D 39 39 1 1 I
+X ~ ~ -350 475 47 D 39 39 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Symbols_DRam
+#
+DEF Symbols_DRam U 0 16 Y Y 1 F N
+F0 "U" 0 200 39 H V C CNN
+F1 "Symbols_DRam" 0 150 39 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -150 100 150 -250 1 1 0 f
+P 3 1 1 0 -125 100 -100 75 -75 100 N
+X Addr ~ -200 25 49 R 39 39 1 1 I
+X RD ~ 200 25 49 L 39 39 1 1 O
+X WD ~ -200 -200 49 R 39 39 1 1 I
+X WE ~ -200 -125 49 R 39 39 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Symbols_IRam
+#
+DEF Symbols_IRam U 0 16 Y Y 1 F N
+F0 "U" 0 150 39 H V C CNN
+F1 "Symbols_IRam" 0 100 39 H V C CNN
+F2 "" 150 -50 50 H I C CNN
+F3 "" 150 -50 50 H I C CNN
+DRAW
+S -150 75 150 -50 0 1 0 f
+P 3 0 0 0 -125 75 -100 50 -75 75 N
+X Addr ~ -200 0 49 R 39 39 1 1 I
+X RD ~ 200 0 49 L 39 39 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Symbols_IReg
+#
+DEF Symbols_IReg U 0 16 Y Y 1 F N
+F0 "U" 0 200 39 H V C CNN
+F1 "Symbols_IReg" 0 150 39 H V C CNN
+F2 "" -125 -150 50 H I C CNN
+F3 "" -125 -150 50 H I C CNN
+DRAW
+S -175 100 175 -75 0 0 0 f
+X Data ~ -225 -25 49 R 39 39 1 1 I
+X EN ~ -225 50 49 R 39 39 1 1 I
+X Instr ~ 225 25 49 L 39 39 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Symbols_ImmediateGen
+#
+DEF Symbols_ImmediateGen U 0 16 Y Y 1 F N
+F0 "U" 0 200 39 H V C CNN
+F1 "Symbols_ImmediateGen" 0 150 39 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 100 200 -100 0 0 0 f
+X Imm ~ 250 0 49 L 39 39 1 1 O
+X Inst ~ -250 -50 49 R 39 39 1 1 I
+X OpCode ~ -250 50 49 R 39 39 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Symbols_ProgramCounter
+#
+DEF Symbols_ProgramCounter U 0 16 Y Y 1 F N
+F0 "U" 0 200 39 H V C CNN
+F1 "Symbols_ProgramCounter" 0 150 39 H V C CNN
+F2 "" -100 -400 50 H I C CNN
+F3 "" -100 -400 50 H I C CNN
+DRAW
+S -250 100 250 -100 0 1 0 f
+P 3 0 0 0 -225 100 -200 75 -175 100 N
+X EN ~ -300 25 49 R 39 39 1 1 I
+X NewPC ~ -300 -50 49 R 39 39 1 1 I
+X PC ~ 300 -50 49 L 39 39 1 1 O
+X PrevPC ~ 300 25 49 L 39 39 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Symbols_RegisterFile
+#
+DEF Symbols_RegisterFile U 0 16 Y Y 1 F N
+F0 "U" 0 450 39 H V C CNN
+F1 "Symbols_RegisterFile" 0 400 39 H V C CNN
+F2 "" 50 0 50 H I C CNN
+F3 "" 50 0 50 H I C CNN
+DRAW
+T 0 -150 -325 39 0 0 0 WD Normal 0 C C
+S -200 350 200 -425 0 0 0 f
+P 3 0 0 0 -175 350 -150 325 -125 350 N
+P 8 0 0 0 -200 -325 -225 -325 -250 -325 -250 -250 -350 -175 -350 -475 -250 -400 -250 -300 f
+X 0 ~ -400 -250 49 R 39 39 1 1 I
+X 1 ~ -400 -325 49 R 39 39 1 1 I
+X 2 ~ -400 -400 49 R 39 39 1 1 I
+X Addr1 ~ -250 300 49 R 39 39 1 1 I
+X Addr2 ~ -250 200 49 R 39 39 1 1 I
+X Addr3 ~ -250 -50 49 R 39 39 1 1 I
+X RD1 ~ 250 300 49 L 39 39 1 1 O
+X RD2 ~ 250 200 49 L 39 39 1 1 O
+X WE ~ -250 50 49 R 39 39 1 1 I
+X ~ ~ -300 -150 59 D 39 39 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
