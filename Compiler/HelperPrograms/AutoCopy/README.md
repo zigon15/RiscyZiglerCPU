@@ -1,0 +1,1 @@
+AutoCopy takes a binary input file and formats the data into 32bit hex words that can be copied straight into the IRAM.v or DRAM.v files. The program copies the formated output to the clipboard automatically.
