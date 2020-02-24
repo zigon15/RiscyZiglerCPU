@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Symbols)(type Legacy)(uri ${KIPRJMOD}/Symbols.lib)(options "")(descr ""))
+  (lib (name KiCAD_RiscVCPU-rescue)(type Legacy)(uri ${KIPRJMOD}/KiCAD_RiscVCPU-rescue.lib)(options "")(descr ""))
+)
