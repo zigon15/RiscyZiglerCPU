@@ -1,4 +1,4 @@
-Commit.sh
+*.gitignore
 
 #Ignore all the files made by ISE
 /FPGA/SpriteAccelerator2/default_xdb
